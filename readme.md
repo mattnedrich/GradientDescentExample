@@ -23,7 +23,7 @@ Using these parameters a gradient descent search is executed on a sample data se
 To run the example, simply run the `gradient_descent_example.py` file using Python
 
 ```
-$ python gradient_descent_example.py
+python gradient_descent_example.py
 ```
 
 The output will look like this
