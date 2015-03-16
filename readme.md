@@ -18,4 +18,4 @@ num_iterations = 1000
 
 Using these parameters a gradient descent search is executed on a sample data set of 100 ponts. Here is a visualization of the search running for 200 iterations using an initial guess of `m = 0`, `b = 0`, and a learning rate of `0.000005`.
 
-![alt tag](https://github.com/mattnedrich/GradientDescentExample/gradient_descent_example.gif)
+![alt tag](https://github.com/mattnedrich/GradientDescentExample/blob/master/gradient_descent_example.gif)
