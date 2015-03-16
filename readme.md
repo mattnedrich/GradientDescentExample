@@ -1,10 +1,10 @@
 ## Gradient Descent Example for Linear Regression
 This example project demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm may be used to solve the [linear regression](http://en.wikipedia.org/wiki/Linear_regression) problem. A more detailed description of this example can be found [here](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/).
 
-## Requirements
+### Code Requirements
 The example code is in Python. The only requirement is [NumPy](http://www.numpy.org/).
 
-## The Example
+### Description
 This code demonstrates how a gradient descent search may be used to obtain a line that fits a set of points.
 
 The code contains a main function called `run`. This functions defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
