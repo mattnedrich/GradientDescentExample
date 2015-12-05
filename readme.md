@@ -5,9 +5,9 @@ This example project demonstrates how the [gradient descent](http://en.wikipedia
 The example code is in Python. The only requirement is [NumPy](http://www.numpy.org/).
 
 ### Description
-This code demonstrates how a gradient descent search may be used to obtain a line that fits a set of points.
+This code demonstrates how a gradient descent search may be used to solve the linear regression problem of fitting a line to a set of points. In this problem, we wish to model a set of points using a line. The line model is defined by two parameters - the line's slope `m`, and y-intercept `b`. Gradient descent attemps to find the best values for these parameters, subject to an error function.
 
-The code contains a main function called `run`. This functions defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
+The code contains a main function called `run`. This function defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
 
 ```python
 initial_b = 0 # initial y-intercept guess
