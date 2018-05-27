@@ -45,6 +45,10 @@ class GradientDescent():
         self.x_list = points[:, 0]
         self.y_list = points[:, 1]
 
+    def load_values(self, x_list, y_list):
+        self.x_list = x_list
+        self.y_list = y_list
+
     def run(self):
         initial_b = 0
         initial_m = 0
