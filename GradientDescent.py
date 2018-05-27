@@ -1,4 +1,4 @@
-from numpy import array, genfromtxt, mean
+from numpy import genfromtxt, mean
 
 
 class GradientDescent():
@@ -6,11 +6,6 @@ class GradientDescent():
     def __init__(self):
         self.initial_b = 0
         self.initial_m = 0
-
-    def _compute_error(self, b, m):
-        predected_y = self.x_list*m+b
-        avg_error = mean((self.y_list - predected_y) ** 2)
-        return avg_error
 
     def _step_gradient(self, b, m, learningRate):
         N = len(self.x_list)
@@ -26,7 +21,10 @@ class GradientDescent():
 
         return b, m
 
-    def _gradient_descent_runner(self):
+    def train_model(self, x_list, y_list):
+        self.x_list = x_list
+        self.y_list = y_list
+
         b = self.initial_b
         m = self.initial_m
 
@@ -36,28 +34,28 @@ class GradientDescent():
         for _ in range(num_iterations):
             b, m = self._step_gradient(b, m, learning_rate)
 
-        return b, m
+        self.b, self.m = b, m
 
-    def load_csv(self, csv_file):
-        data_set = genfromtxt(csv_file, delimiter=",")
-        self.x_list = data_set[:, 0]
-        self.y_list = data_set[:, 1]
+    def predect(self, *x):
+        return x * self.m + self.b
 
-    def load_arrays(self, x_list, y_list):
-        self.x_list = x_list
-        self.y_list = y_list
+    @property
+    def variable_set(self):
+        predected_y = self.x_list * self.m + self.b
+        avg_error = mean((self.y_list - predected_y) ** 2)
 
-    def get_predection(self):
-        b, m = self._gradient_descent_runner()
-        error = self._compute_error(b, m)
-        return b, m, error
+        return self.b, self.m, avg_error
 
 
 if __name__ == '__main__':
-    gradient_descent = GradientDescent()
-    gradient_descent.load_csv("data.csv")
+    data_set = genfromtxt("data.csv", delimiter=",")
+    x = data_set[:, 0]
+    y = data_set[:, 1]
 
-    b, m, error = gradient_descent.get_predection()
+    gradient_descent = GradientDescent()
+    gradient_descent.train_model(x, y)
+
+    b, m, error = gradient_descent.variable_set
 
     print("intercept =", b)
     print("slope =", m)
