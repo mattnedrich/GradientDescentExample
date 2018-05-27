@@ -24,7 +24,9 @@ error = 112.31533427075733
 ```
 
 ### Suggestions
-feel free to fork & update to your needs. lets make world a better place with open source
+feel free to fork & update to your needs
+
 
 ---
 mail me @ nagasai.g9@gmail.com
+making world a better palce with open source
