@@ -12,9 +12,8 @@ Just run *GradientDescent.py* file using any Python 3 interpreter. Make sure 'da
 
 to use this in your projects,
 * import this class in your code
-* create object for this class
-* call *train_model* method with x &  y axis as numpy arrays
-* you can call *predect* method with any x value(s) & it'll return it's corresponding y value(s)
+* *train_model* method takes x &  y axis as numpy arrays & trains the model
+* *predect* method takes any x value(s) & returns corresponding y value(s) as a list
 * *variable_set* is a tuple that contains intercept, slope & error values
 
 ## Output
