@@ -13,7 +13,7 @@ class GradientDescent():
         return avg_error
 
     def _step_gradient(self, b, m, learningRate):
-        N = float(len(self.x_list))
+        N = len(self.x_list)
 
         predected_y = m * self.x_list + b
         y_difference = self.y_list - predected_y
