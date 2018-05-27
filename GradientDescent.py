@@ -1,4 +1,4 @@
-from numpy import genfromtxt, mean
+from numpy import array, genfromtxt, mean
 
 
 class GradientDescent():
@@ -14,12 +14,12 @@ class GradientDescent():
         b = self.initial_b
         m = self.initial_m
 
-        num_iterations = len(self.x_list) * 100
+        N = len(self.x_list)
+
+        num_iterations = N * 100
         learning_rate = 1 / num_iterations
 
         for _ in range(num_iterations):
-            N = len(self.x_list)
-
             predected_y = m * self.x_list + b
             y_difference = self.y_list - predected_y
 
@@ -32,7 +32,7 @@ class GradientDescent():
         self.b, self.m = b, m
 
     def predect(self, *x):
-        return x * self.m + self.b
+        return array(x) * m + b
 
     @property
     def variable_set(self):
