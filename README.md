@@ -28,5 +28,5 @@ feel free to fork & update to your needs
 
 
 ---
-mail me @ nagasai.g9@gmail.com
+mail me @ nagasai.g9@gmail.com <br/>
 making world a better palce with open source
