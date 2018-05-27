@@ -4,10 +4,11 @@ from numpy import array, genfromtxt, mean
 class GradientDescent():
 
     def _print_values(self, message, b, m, error):
-        print("\n" + message)
-        print("\tintercept =", b)
-        print("\tslope =", m)
-        print("\terror =", error)
+        print(message)
+        print("intercept =", b)
+        print("slope =", m)
+        print("error =", error)
+        print("----------")
 
     def _compute_error(self, x_list, y_list, b, m):
         predected_y = x_list*m+b
@@ -62,3 +63,5 @@ if __name__ == '__main__':
     gradient_descent = GradientDescent()
     gradient_descent.load_file("data.csv")
     gradient_descent.run()
+
+    input("press any key to exit")
