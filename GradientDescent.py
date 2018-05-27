@@ -7,20 +7,6 @@ class GradientDescent():
         self.initial_b = 0
         self.initial_m = 0
 
-    def _step_gradient(self, b, m, learningRate):
-        N = len(self.x_list)
-
-        predected_y = m * self.x_list + b
-        y_difference = self.y_list - predected_y
-
-        b_gradient = sum(2 / N * y_difference)
-        m_gradient = sum(2 / N * self.x_list * y_difference)
-
-        b += learningRate * b_gradient
-        m += learningRate * m_gradient
-
-        return b, m
-
     def train_model(self, x_list, y_list):
         self.x_list = x_list
         self.y_list = y_list
@@ -32,7 +18,16 @@ class GradientDescent():
         learning_rate = 1 / num_iterations
 
         for _ in range(num_iterations):
-            b, m = self._step_gradient(b, m, learning_rate)
+            N = len(self.x_list)
+
+            predected_y = m * self.x_list + b
+            y_difference = self.y_list - predected_y
+
+            b_gradient = sum(2 / N * y_difference)
+            m_gradient = sum(2 / N * self.x_list * y_difference)
+
+            b += learning_rate * b_gradient
+            m += learning_rate * m_gradient
 
         self.b, self.m = b, m
 
