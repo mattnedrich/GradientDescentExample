@@ -28,11 +28,11 @@ class GradientDescent:
             predicted_y = slope * x_list + intercept
             y_difference = y_list - predicted_y
 
-            b_gradient = sum(2 / count * y_difference)
-            m_gradient = sum(2 / count * x_list * y_difference)
+            intercept_gradient = sum(2 / count * y_difference)
+            slope_gradient = sum(2 / count * y_difference * x_list)
 
-            intercept += learning_rate * b_gradient
-            slope += learning_rate * m_gradient
+            intercept += learning_rate * intercept_gradient
+            slope += learning_rate * slope_gradient
 
         avg_error = mean((y_list - predicted_y) ** 2)
 
