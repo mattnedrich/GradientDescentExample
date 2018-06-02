@@ -1,45 +1,52 @@
 from numpy import array, genfromtxt, mean
 
 
-class GradientDescent():
-
-    def __init__(self):
-        self.initial_b = 0
-        self.initial_m = 0
+class GradientDescent:
+    """
+        This uses Gradient Descent algorithm to solve Linear Regression problems
+    """
 
     def train_model(self, x_list, y_list):
-        self.x_list = x_list
-        self.y_list = y_list
+        """
+            Takes X & Y values and learn their relation
 
-        b = self.initial_b
-        m = self.initial_m
+            :param x_list: explanatory variable
+            :param y_list: dependent variable
+            :return: None
+        """
 
-        N = len(self.x_list)
+        intercept = 0
+        slope = 0
+        predicted_y = 0
 
-        num_iterations = N * 100
+        count = len(x_list)
+
+        num_iterations = count * 100
         learning_rate = 1 / num_iterations
 
         for _ in range(num_iterations):
-            predected_y = m * self.x_list + b
-            y_difference = self.y_list - predected_y
+            predicted_y = slope * x_list + intercept
+            y_difference = y_list - predicted_y
 
-            b_gradient = sum(2 / N * y_difference)
-            m_gradient = sum(2 / N * self.x_list * y_difference)
+            b_gradient = sum(2 / count * y_difference)
+            m_gradient = sum(2 / count * x_list * y_difference)
 
-            b += learning_rate * b_gradient
-            m += learning_rate * m_gradient
+            intercept += learning_rate * b_gradient
+            slope += learning_rate * m_gradient
 
-        self.b, self.m = b, m
+        avg_error = mean((y_list - predicted_y) ** 2)
 
-    def predect(self, *x):
-        return array(x) * m + b
+        self.variable_set = intercept, slope, avg_error
 
-    @property
-    def variable_set(self):
-        predected_y = self.x_list * self.m + self.b
-        avg_error = mean((self.y_list - predected_y) ** 2)
+    def predict(self, *x):
+        """
+            Takes unknown X and returns corresponding guessed Y
 
-        return self.b, self.m, avg_error
+            :param x: explanatory variable(s)
+            :return: array of dependent variable(s)
+        """
+
+        return array(x) * slope + intercept
 
 
 if __name__ == '__main__':
@@ -50,8 +57,8 @@ if __name__ == '__main__':
     gradient_descent = GradientDescent()
     gradient_descent.train_model(x, y)
 
-    b, m, error = gradient_descent.variable_set
+    intercept, slope, error = gradient_descent.variable_set
 
-    print("intercept =", b)
-    print("slope =", m)
+    print("intercept =", intercept)
+    print("slope =", slope)
     print("error =", error)
