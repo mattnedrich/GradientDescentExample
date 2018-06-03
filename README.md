@@ -8,7 +8,7 @@ Demonstrating how [Gradient Descent](http://en.wikipedia.org/wiki/Gradient_desce
 
 Equation of a line is `y = mx + b` where m is the slope and b is the y-intercept
 
-Once we have line equation, we can find any ```dependent variable y``` with corresponding ```explanatory variable x```
+Once we have line equation, we can find any `dependent variable y` with corresponding `explanatory variable x`
 
 That helps us find any prediction _(dependent variable)_ based on given scenario _(explanatory variable)_ as long as it relates to given set of points
 
