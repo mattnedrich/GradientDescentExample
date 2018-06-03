@@ -8,11 +8,7 @@ class GradientDescent:
 
     def train_model(self, x_list, y_list):
         """
-            Takes X & Y values and learn their relation
-
-            :param x_list: explanatory variable
-            :param y_list: dependent variable
-            :return: None
+            Takes X & Y values and learns their relation
         """
 
         intercept = 0
@@ -34,6 +30,7 @@ class GradientDescent:
             intercept += learning_rate * intercept_gradient
             slope += learning_rate * slope_gradient
 
+        predicted_y = slope * x_list + intercept
         avg_error = mean((y_list - predicted_y) ** 2)
 
         self.variable_set = intercept, slope, avg_error
@@ -41,9 +38,6 @@ class GradientDescent:
     def predict(self, *x):
         """
             Takes unknown X and returns corresponding guessed Y
-
-            :param x: explanatory variable(s)
-            :return: array of dependent variable(s)
         """
 
         return array(x) * slope + intercept
@@ -58,6 +52,8 @@ if __name__ == '__main__':
     gradient_descent.train_model(x, y)
 
     intercept, slope, error = gradient_descent.variable_set
+
+    print(gradient_descent.predict())
 
     print("intercept =", intercept)
     print("slope =", slope)
