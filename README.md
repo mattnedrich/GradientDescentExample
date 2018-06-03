@@ -1,10 +1,11 @@
 # GradientDescentExample
-*forked from Matt Nedrich's [GradientDescentExample](https://github.com/mattnedrich/GradientDescentExample)*
+
+> forked from Matt Nedrich's [GradientDescentExample](https://github.com/mattnedrich/GradientDescentExample)
 
 Demonstrating how [Gradient Descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm can solve [Linear Regression](https://en.m.wikipedia.org/wiki/Linear_regression) problems
 
 ## Linear Regression
-[Linear Regression](https://en.m.wikipedia.org/wiki/Linear_regression) helps to find a line, which intersects through set of points
+[Linear Regression](https://en.m.wikipedia.org/wiki/Linear_regression) helps to find a line of best fit, which goes close to the set of given points
 
 Equation of a line is `y = mx + b` where m is the slope and b is the y-intercept
 
