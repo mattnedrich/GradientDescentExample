@@ -1,4 +1,4 @@
-# GradientDescentExample
+# Gradient Descent for Linear Regression
 
 Demonstrating how `Gradient Descent` algorithm can solve `Linear Regression` problems
 
