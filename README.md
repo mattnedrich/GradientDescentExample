@@ -14,7 +14,7 @@ Once we have line equation, we can find any `dependent variable y` with correspo
 That helps us find any prediction _(dependent variable)_ based on given scenario _(explanatory variable)_ as long as it relates to given set of points
 
 ## Usage
-1. make sure `data.csv` & `GradientDescent.py` are in same folder 
+1. make sure [data.csv](https://github.com/nagasaimanoj/Gradient_Descent_Example/blob/master/data.csv) & [GradientDescent.py](https://github.com/nagasaimanoj/Gradient_Descent_Example/blob/master/GradientDescent.py) are in same folder 
 2. run `GradientDescent.py` using [Python3](https://www.python.org/downloads/) interpreter for test - run
 
 #### Methods
