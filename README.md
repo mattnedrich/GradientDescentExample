@@ -6,13 +6,11 @@ Demonstrating how `Gradient Descent` algorithm can solve `Linear Regression` pro
 
 `Linear Regression` helps to find a line of best fit, which goes close to the set of given points
 
-
 Equation of straight line is,
 
 ![Line Equation](http://latex2png.com/output//latex_36e24d2caaa6ec79a0967c31517d8d58.png) 
 
 where m is the slope, b is the y-intercept for each point p(x, y)
-
 
 Once we have line equation, we can find any `dependent variable y` with corresponding `explanatory variable x`
 
