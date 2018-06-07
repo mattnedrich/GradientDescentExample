@@ -35,7 +35,7 @@ error = 112.31533427075733
 
 - [Linear Regression](https://en.m.wikipedia.org/wiki/Linear_regression)
 - [Gradient Descent](http://en.wikipedia.org/wiki/Gradient_descent)
-- [Python3](https://www.python.org/downloads/)
+- [Line Equation](https://en.wikipedia.org/wiki/Linear_equation)
 
 ---
 contact me @ nagasai.g9@gmail.com
