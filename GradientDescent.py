@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
     intercept, slope, error = gradient_descent.variable_set
 
-    print(gradient_descent.predict())
+    print(gradient_descent.predict(60))
 
     print("intercept =", intercept)
     print("slope =", slope)
