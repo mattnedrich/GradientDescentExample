@@ -17,8 +17,8 @@ class GradientDescent:
 
         count = len(x_list)
 
-        num_iterations = count * 100
-        learning_rate = 1 / num_iterations
+        num_iterations = 10000
+        learning_rate = 0.0001
 
         for _ in range(num_iterations):
             predicted_y = slope * x_list + intercept
