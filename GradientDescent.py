@@ -17,7 +17,7 @@ class GradientDescent:
 
         count = len(x_list)
 
-        num_iterations = 10000
+        num_iterations = 1000
         learning_rate = 0.0001
 
         for _ in range(num_iterations):
