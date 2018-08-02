@@ -27,17 +27,20 @@ In order to get better results, we have to set `learning rate` to minimum and `i
 so the sweet spot shold be decided based on data-set
 
 ## Usage
+download this repo & run python file
 
 1. make sure `data.csv` & `GradientDescent.py` are in same folder
 2. run `GradientDescent.py` using `Python3` interpreter for test - run
 
 ### Methods
+I've created just 3 methods to train, predect and to see formula values
 
-- `train_model()` takes _explanatory_ & _dependent_ variables as numpy arrays & trains the linear model
-- `predict()` takes any x value(s) & returns corresponding y value(s) as a list
+- `train_model(x[...], y[...])` takes _explanatory_ & _dependent_ variables as numpy arrays & trains the linear model
+- `predict(x[...])` takes any x value(s) & returns corresponding y value(s) as a list
 - `variable_set` is a tuple, containing intercept, slope average error from actual vs predicted values
 
 ### Output
+output of current code. try to beat this
 
 ```
 intercept = 0.6078985997054931
