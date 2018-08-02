@@ -48,11 +48,5 @@ slope = 1.4675440436333027
 error = 112.31533427075733
 ```
 
-## References
-
-- [Linear Regression](https://en.m.wikipedia.org/wiki/Linear_regression)
-- [Gradient Descent](http://en.wikipedia.org/wiki/Gradient_descent)
-- [Line Equation](https://en.wikipedia.org/wiki/Linear_equation)
-
 ---
 contact me @ nagasai.g9@gmail.com
