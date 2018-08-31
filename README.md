@@ -29,8 +29,8 @@ so the sweet spot shold be decided based on data-set
 ## Usage
 download this repo & run python file
 
-1. make sure `data.csv` & `GradientDescent.py` are in same folder
-2. run `GradientDescent.py` using `Python3` interpreter for test - run
+1. make sure `data.csv` & `gradient_descent.py` are in same folder
+2. run `gradient_descent.py` using `Python3` interpreter for test-run
 
 ### Methods
 I've created just 3 methods to train, predect and to see formula values
