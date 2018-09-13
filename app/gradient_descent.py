@@ -17,11 +17,17 @@ class GradientDescent:
 
         count = len(x_list)
 
-        num_iterations = 1000
         learning_rate = 0.0001
 
-        for _ in range(num_iterations):
-            predicted_y = slope * x_list + intercept
+        predicted_y = 1
+
+        while True:
+            new_y = slope * x_list + intercept
+
+            if all(predicted_y == new_y):
+                break
+
+            predicted_y = new_y
             y_difference = y_list - predicted_y
 
             intercept_gradient = sum(2 / count * y_difference)
