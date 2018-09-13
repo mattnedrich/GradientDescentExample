@@ -43,7 +43,9 @@ I've created just 3 methods to train, predect and to see formula values
 output of current code. try to beat this
 
 ```
-intercept = 0.6078985997054931
-slope = 1.4675440436333027
-error = 112.31533427075733
+60 - [87.33688235]
+
+intercept = 7.991020981858682
+slope = 1.3224310227634517
+error = 110.25738346621316
 ```
