@@ -27,10 +27,10 @@ while True:
     slope += learning_rate * slope_gradient
 
 predicted_y = slope * x_list + intercept
-error = mean((y_list - predicted_y) ** 2)
+rmse = mean((y_list - predicted_y) ** 2)
 
 print("60 -", (60 * slope + intercept))
 
 print("intercept =", intercept)
 print("slope =", slope)
-print("error =", error)
+print("rmse =", rmse)
