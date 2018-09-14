@@ -13,13 +13,10 @@ class GradientDescent:
 
         intercept = 0
         slope = 0
-        predicted_y = 0
-
-        count = len(x_list)
+        predicted_y = 1
 
         learning_rate = 0.0001
-
-        predicted_y = 1
+        count = len(x_list)
 
         while True:
             new_y = slope * x_list + intercept
