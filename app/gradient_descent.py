@@ -34,9 +34,9 @@ class GradientDescent:
             slope += learning_rate * slope_gradient
 
         predicted_y = slope * x_list + intercept
-        avg_error = mean((y_list - predicted_y) ** 2)
+        rmse = mean((y_list - predicted_y) ** 2)
 
-        self.variable_set = intercept, slope, avg_error
+        self.variable_set = intercept, slope, rmse
 
     def predict(self, *x):
         """
@@ -54,10 +54,10 @@ if __name__ == '__main__':
     gradient_descent = GradientDescent()
     gradient_descent.train_model(x, y)
 
-    intercept, slope, error = gradient_descent.variable_set
+    intercept, slope, rmse = gradient_descent.variable_set
 
     print("60 -", gradient_descent.predict(60))
 
     print("intercept =", intercept)
     print("slope =", slope)
-    print("error =", error)
+    print("rmse =", rmse)
