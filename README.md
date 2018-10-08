@@ -27,7 +27,7 @@ In order to get better results, we have to set `learning rate` to minimum and `i
 so the sweet spot shold be decided based on data-set
 
 ### Use-Case
-used to find dependent variable in a linear relation on providing an independent variable
+used to find dependent variable in a linear relation on providing an explanatory variable
 
 ## Usage
 download this repo & run python file
