@@ -26,7 +26,7 @@ Obtained `line of best fit` helps us find any prediction _(dependent variable)_ 
 In order to get better results, we have to set `learning rate` to minimum and `iterations` to maximum. but this takes lot of time and resources
 so the sweet spot shold be decided based on data-set
 
-## Use-Case
+### Use-Case
 used to find dependent variable in a linear relation on providing an independent variable
 
 ## Usage
