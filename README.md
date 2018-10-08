@@ -43,8 +43,6 @@ I've created just 3 methods to train, predect and to see formula values
 - `variable_set` is a tuple, containing intercept, slope average error from actual vs predicted values
 
 ### Output
-output of current code. try to beat this
-
 ```
 60 - [87.33688235]
 
