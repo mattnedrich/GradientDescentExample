@@ -47,7 +47,7 @@ class GradientDescent:
 
 
 if __name__ == '__main__':
-    data_set = genfromtxt("data.csv", delimiter=",")
+    data_set = genfromtxt("data.csv", delimiter=',')
     x = data_set[:, 0]
     y = data_set[:, 1]
 
@@ -56,8 +56,8 @@ if __name__ == '__main__':
 
     intercept, slope, rmse = gradient_descent.variable_set
 
-    print("60 -", gradient_descent.predict(60))
+    print('60 -', gradient_descent.predict(60))
 
-    print("intercept =", intercept)
-    print("slope =", slope)
-    print("rmse =", rmse)
+    print('intercept =', intercept)
+    print('slope =', slope)
+    print('rmse =', rmse)
