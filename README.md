@@ -30,23 +30,7 @@ so the sweet spot shold be decided based on data-set
 used to find dependent variable in a linear relation on providing an explanatory variable
 
 ## Usage
-download this repo & run python file
+download this repo & run python file using `Python3` interpreter for test-run
 
-1. make sure `data.csv` & `gradient_descent.py` are in same folder
-2. run `gradient_descent.py` using `Python3` interpreter for test-run
-
-### Methods
-I've created just 3 methods to train, predect and to see formula values
-
-- `train_model(x[...], y[...])` takes _explanatory_ & _dependent_ variables as numpy arrays & trains the linear model
-- `predict(x[...])` takes any x value(s) & returns corresponding y value(s) as a list
-- `variable_set` is a tuple, containing intercept, slope average error from actual vs predicted values
-
-### Output
-```
-60 - [87.33688235]
-
-intercept = 7.991020981858682
-slope = 1.3224310227634517
-error = 110.25738346621316
-```
+### Credits
+all credits to [Matt Nedrich](https://github.com/mattnedrich/GradientDescentExample)
