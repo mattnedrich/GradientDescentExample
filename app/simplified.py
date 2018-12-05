@@ -1,4 +1,4 @@
-from numpy import array, genfromtxt, mean
+from numpy import genfromtxt, mean
 
 data_set = genfromtxt("data.csv", delimiter=",")
 x_list = data_set[:, 0]
