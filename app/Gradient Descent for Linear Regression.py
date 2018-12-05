@@ -1,7 +1,13 @@
 from matplotlib.pyplot import legend, plot, scatter, show
-from numpy import genfromtxt, mean, sqrt, square
+from numpy import array, mean, sqrt, square
 
-data_set = genfromtxt("data.csv", delimiter=",")
+data_set = array([
+    [32,31], [53,68], [60,62], [47,71], [59,87],
+    [55,78], [52,79], [39,59], [48,75], [52,71],
+    [45,55], [54,82], [44,62], [58,75], [56,81],
+    [48,60], [44,82], [60,97], [45,48], [38,56],
+    [66,83], [65,11], [47,57], [41,51], [51,75]
+])
 
 x_list = data_set[:, 0]
 y_list = data_set[:, 1]
