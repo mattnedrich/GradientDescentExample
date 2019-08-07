@@ -8,7 +8,7 @@ Demonstrating how `Gradient Descent` algorithm can solve `Linear Regression` pro
 
 Equation of straight line is,
 
-![Line Equation](http://latex2png.com/output//latex_36e24d2caaa6ec79a0967c31517d8d58.png) 
+` y = mx + b `
 
 where m is the slope, b is the y-intercept for each point p(x, y)
 
@@ -17,7 +17,7 @@ Once we have line equation, we can find any "dependent variable" `y` with corres
 We can get Y-values for each X and it may not match with actual Y-value
 difference is then calculated using
 
-![error Equation](http://latex2png.com/output//latex_cc30596a0cab8136c6aa10e8efe99c84.png)
+` error = sqrt(mean((actual - predicted)^2) `
 
 We have to minimise this error by changing `slope m` & `y-intercept b` for the next iteration to best fit the line
 
