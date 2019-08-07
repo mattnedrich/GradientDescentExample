@@ -4,7 +4,7 @@ Demonstrating how `Gradient Descent` algorithm can solve `Linear Regression` pro
 
 ## Linear Regression
 
-`Linear Regression` helps to find a line of best fit, which goes close to the set of given points
+`Linear Regression` helps to find a `line of best fit`, which goes close to the set of given points
 
 Equation of straight line is,
 
