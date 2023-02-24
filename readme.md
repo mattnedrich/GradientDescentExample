@@ -1,3 +1,17 @@
+## Introduction to Grdaient Descent
+Gradient descent is an optimization algorithm used to minimize the value of a function. The algorithm works by iteratively adjusting the input parameters of the function in the direction of the steepest descent (negative gradient) until a minimum value of the function is reached.
+
+Here's how the algorithm works in more detail:
+
+Choose an initial set of input parameters for the function.
+Calculate the gradient of the function with respect to the input parameters at the current point.
+Update the input parameters by moving in the direction of the negative gradient, with a step size determined by a learning rate hyperparameter.
+Repeat steps 2 and 3 until the algorithm converges to a minimum value of the function, or until a stopping criterion is met.
+The idea behind gradient descent is that by moving in the direction of the negative gradient, we are guaranteed to decrease the value of the function at each step, eventually leading us to a local minimum. The learning rate hyperparameter controls the step size of each update, and needs to be tuned carefully to avoid oscillations or slow convergence.
+
+Gradient descent is widely used in machine learning to optimize the parameters of models such as neural networks and linear regression. By minimizing a loss function using gradient descent, we can find the best set of parameters that fit the data and make accurate predictions.
+
+
 ## Gradient Descent Example for Linear Regression
 This example project demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm may be used to solve a [linear regression](http://en.wikipedia.org/wiki/Linear_regression) problem. A more detailed description of this example can be found [here](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/).
 
